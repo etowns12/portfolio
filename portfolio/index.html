@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+            <title></title>
+
+        <!--custom stylesheet-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--external stylesheets-->
+        <link rel="stylesheet" href="lib/scrollmap.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+        <div class="content">
+             <!--title block, background image is title image-->
+            <div class="row" style="background-image:url(assets/title4.png); background-size:contain;">
+                <div class="center title">
+                    <!--title text-->
+                    <h1>Scooby Doo Map</h1>
+                    <!--subtitle or author-->
+                    <p class="author"> <span style="color: azure;">Ellie Towns</span></p>
+                </div>
+            </div>
+            <!--text content block-->
+            <div class="row">
+                <div class="center">
+                    <p>This explainer describes a web map based on the groovy, cartoonish style of the Scooby Doo cartoons.<br>(With a spooky twist!)</p>
+                </div>
+            </div>
+            <!--side by side text and image-->
+            <div class="row">
+                <div class="left">
+                    <img class="fit" src="assets/inspo.png">
+                </div>
+                <div class="right">
+                    <p class="vert-center">This map draws on the retro style of the old Scooby Doo cartoons while utilizing its famous color scheme of bright greens, oranges, blues and purples. It also takes inspiration from scenes at night, extracted from the wispy trees and shadows.</p>
+                </div>
+            </div>
+
+            <!--background images with text scrolling over them (sidecar)-->
+            <div class="scroll-container">    
+                <!--background images-->
+                <div class="background-item">
+                    <img src="assets/naples_light.png" data-slide="1" class="fill">
+                    <img src="assets/naples_dark.png" data-slide="2" class="fill hidden">
+                    <img src="assets/slc.png" data-slide="3" class="fill hidden">
+                    <img src="assets/stl2.png" data-slide="4" class="fill hidden">
+                </div>
+                <!--foreground text blocks-->
+                <div class="foreground-item">
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Naples, Italy looks like this.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">But it also looks like this. EEK!<br>A melting font and dark colors help symbolize the scary and haunting aspects of these cartoons.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">A close-up of the Salt Lake City to highlight the contrast between the water and land.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Finally, a look at the St. Louis, Missouri to showcase the road network and river.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!--slideshow content goes here-->
+                        <div class="slide">
+                            <img src="assets/north_america.png">
+                            <p class="caption">A zoomed-out view of North America displays the contrast between the iconic colors and inspired text.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/southwest.png">
+                            <p class="caption">A mid-scale view placed in the Southwest.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/slide_chicago.png">
+                            <p class="caption">A large-scale view of the city of Chicago showcasing the change in style.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/scary_chicago.png">
+                            <p class="caption">Zooming into Chicago more to make it even spookier.</p>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+
+                        <!-- The dots/circles -->
+                        <div class="slideshow-dots">
+                            <span class="dot" id="1"></span>
+                            <span class="dot" id="2"></span>
+                            <span class="dot" id="3"></span>
+                            <span class="dot" id="4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <iframe class="fit" src="https://api.mapbox.com/styles/v1/etowns/cmgl0229z000d01s094ga29h3.html?title=view&access_token=pk.eyJ1IjoiZXRvd25zIiwiYSI6ImNtZ2t6eTNxcjB5eHAya3Eyb3d3cXQ0MDcifQ.ndFc90FzKR6iqH0uV3BKbA&zoomwheel=true&fresh=true#0/0/0"></iframe>
+                </div>
+            </div>
+
+            <!--credits-->
+            <div class="row no-margin">
+                <div class="center">
+                    <div class="credits">
+                        <p><b>Credits:</b></p>
+                        <p>Map created with Mapbox Studio</p>
+                        <p>Data from openstreetmap</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--external scripts-->
+        <script type="text/javascript" src="lib/scrollmap.js"></script>
+    </body>
+</html>
